@@ -14,16 +14,20 @@
 	margin: 0px;
 }
 
+html, body {
+	min-height: 100%vh;
+}
+
 body {
-	background: #F2911B url('../imagens/fundo_academia1.png') center center no-repeat fixed;
-	/*background-image:linear-gradient(-45deg, #F2911B, #FAA517)
+	background-image: linear-gradient(-45deg, #FAA517,#F2911B, #DB740D, #F4750F);
+	/*background: #F2911B url('../imagens/fundo_academia1.png') center center no-repeat fixed;
 	background-image: url('../imagens/fundo_academia1.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;*/
 	background-size:cover;
 	color: rgba(0, 0, 0, 0.938);
-	max-width: 1050;
+	/*max-width: 1050;*/
 	font-family: "Brush Script MT", cursive ;
 }
 
@@ -53,7 +57,7 @@ nav ul li a {
 	display: block;
 	text-decoration: none;
 	transition: background .3s;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	display: inline-block;
 	
 }
@@ -69,6 +73,7 @@ nav#menu a:hover{
 
 nav ul li:last-child {
 	float: right;
+	text-decoration: none;
 }
 
 nav img {
@@ -81,12 +86,13 @@ nav img {
 /* Formatação do corpo */
 main{
 	background-color: white;
-	width: 800px;
+	width: 100%vh;
 	margin: auto;
 }
 
 main h1 {
 	background-image: linear-gradient(to right, #F4750F, transparent);
+	
 }
 
 /* Formatação do rodape */
